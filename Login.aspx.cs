@@ -17,16 +17,16 @@ namespace PanelAdmin
         }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            string connectionString = "workstation id=jebcpharma.mssql.somee.com;packet size=4096;user id=paladar_SQLLogin_1;pwd=bgofrm6416;data source=jebcpharma.mssql.somee.com;persist security info=False;initial catalog=jebcpharma";
-            string query = "SELECT Nombre, Row, Tipo, Apellido FROM Clientes WHERE Correo=@Correo AND Contrasena=@Pass";
+            string connectionString = ConexionString.conexion;
+            string query = "SELECT Nombre, Row, Tipo FROM Usuario WHERE Correo=@Correo AND Pass=@Pass";
 
 
             using (SqlConnection con = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
 
-                cmd.Parameters.Add("@Correo", SqlDbType.VarChar, 50).Value = Correo.Value.ToString();
-                cmd.Parameters.Add("@Pass", SqlDbType.VarChar, 50).Value = Contrasena.Value.ToString();
+                cmd.Parameters.Add("@Correo", SqlDbType.VarChar, 50).Value = CorreoT.Value.ToString();
+                cmd.Parameters.Add("@Pass", SqlDbType.VarChar, 50).Value = ContrasenaT.Value.ToString();
 
 
                 con.Open();
@@ -39,17 +39,12 @@ namespace PanelAdmin
                         string nombre = dr.GetFieldValue<string>(0);
                         int Row = dr.GetFieldValue<int>(1);
                         string Perfil = dr.GetFieldValue<string>(2);
-                        string Apellido = dr.GetFieldValue<string>(3);
+                        
 
                         HttpCookie nombreS = new HttpCookie("nombreC");
                         nombreS.Value = nombre;
                         nombreS.Expires = DateTime.Now.AddDays(30);
                         Response.Cookies.Add(nombreS);
-
-                        HttpCookie nombre2S = new HttpCookie("appellC");
-                        nombre2S.Value = Apellido;
-                        nombre2S.Expires = DateTime.Now.AddDays(30);
-                        Response.Cookies.Add(nombre2S);
 
                         HttpCookie idclienteS = new HttpCookie("rowC");
                         idclienteS.Value = Row.ToString();

@@ -5,7 +5,7 @@
         <div class="card-header">
                 <div class="form-row">
                     <div class="col10L">                        
-                        <asp:Label ID="Label6" runat="server" Text="TOTAL PEDIDOS" Style="font-weight: bold; font-size: 18px;"></asp:Label>                                                
+                        <asp:Label ID="Label6" runat="server" Text="TOTAL PEDIDOS"  CssClass="titulocard"></asp:Label>                                                
                     </div>                   
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <asp:CommandField ShowSelectButton="True" ButtonType="Button" SelectText="DETALLE" />
         </Columns>
         <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                            <HeaderStyle BackColor="white" Font-Bold="True" ForeColor="black" />
+                            <HeaderStyle BackColor="white" Font-Bold="True" ForeColor="white" />
                             <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
                             <SelectedRowStyle BackColor="#CCCCCC" Font-Bold="True" ForeColor="White" />
                             <SortedAscendingCellStyle BackColor="#F7F7F7" />

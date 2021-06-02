@@ -107,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Registro.aspx" />
     <Content Include="ClientesVendedor.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="img\fondo-iconos1.png" />
@@ -115,7 +116,6 @@
     <Content Include="img\Isologo_5.png" />
     <Content Include="img\Recurso3.png" />
     <Content Include="Login.aspx" />
-    <Content Include="Login2.aspx" />
     <Content Include="NotasPedidos.aspx" />
     <Content Include="ConsVentasVend.aspx" />
     <Content Include="PedidosEliminar.aspx" />
@@ -228,6 +228,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ClientesVendedor.aspx.cs">
       <DependentUpon>ClientesVendedor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -235,19 +242,13 @@
     <Compile Include="ClientesVendedor.aspx.designer.cs">
       <DependentUpon>ClientesVendedor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConexionString.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login2.aspx.cs">
-      <DependentUpon>Login2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login2.aspx.designer.cs">
-      <DependentUpon>Login2.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotasPedidos.aspx.cs">
       <DependentUpon>NotasPedidos.aspx</DependentUpon>

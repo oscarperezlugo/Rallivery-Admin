@@ -1,5 +1,13 @@
-﻿
+﻿/*html {
+    background: url(imf/fondo-iconos1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
 body {
+    background-image: url('../img/fondo-iconos1.png');
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,12 +19,15 @@ body {
     position:relative;
     top:130px;
 }*/
-.nave {    
-    background-color: lightgray;
+.nave {
+    background-color: #F3F3F3;
     height: 100px;
 }
+nav div {
+    float: left;
+}
 .subnave {
-    background-color: #05c3dd;
+    background-color: #A5C739;
     height: 30px;
     color: white;
     font-weight: bold;
@@ -30,18 +41,18 @@ body {
     margin-left: 0;
 }
 .menulateral {
-    background-color: #293133;
+    background-color: #606060;
     padding: 10px;
-    width: 30%;    
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    color: #A5C739;
+    font-family: 'Roboto';
     position: fixed;
     top: 130px;
     bottom: 0px;
     margin-left: -30%;
     transition: left 0.7s;
     z-index: 2;
-    overflow:auto;
+    overflow: auto;
 }
 li:hover{
     list-style:none;
@@ -70,25 +81,29 @@ div{
 .ultimomenu{
     margin-bottom:150px;
 }
-li a{
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
+li a {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-weight: bold;
+    font-Family:'Poppins';
+    font-size:20px;
 }
     li a:hover {
         text-decoration: none;
-        color: #05c3dd;
+        color: #A5C739;
     }
 .baseform {
     text-align: center;
 }
 .formulario {
-    padding: 10px;
+    padding: 20px;
     width: 90%;
-    border-color: black;
+    border-color: transparent;
     margin: 20px;
-    border-radius: 5px;
-    font-family: 'Trebuchet MS';
+    border-radius: 18px;
+    background-color: #f3f3f3;
+    font-family: 'Poppins';
+    font-size:20px;
 }
 .formularioTIT {
     padding: 10px;
@@ -99,13 +114,15 @@ li a{
     text-align:right;
 }
 .botonsubmit {
-    background-color: black;
-    border-color: black;
+    background-color: #A5C739;
+    border-color: transparent;
     width: 50%;
-    font-family: 'Trebuchet MS';
+    font-family: 'Roboto';
     color: white;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    font-size:15px;
+    font-weight:700;
 }
 .botonedit {
     background-color: #252850;
@@ -175,29 +192,37 @@ li a{
 
 .mGrid {
     width: 100%;
-    background-color: #fff;
+    background-color: #606060;
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
 }
 
     .mGrid td {
-        padding: 14px;
-        color: #717171;
-        text-align: center;
+        padding: 24px;
+        color: #606060;
+        text-align: left;
+        font-family: 'Roboto';        
+        
     }
 
     .mGrid th {
-        padding: 4px 16px;
+        padding: 25px 18px;
         color: white;
-        background: gray;
-        font-size: 0.9em;
-        text-align: center;
+        background: #F9A000;
+        font-size: 18px;
+        font-family:'Roboto';
+        font-weight:700;
+        text-align: left;
         height: 40px;
+        
+    }
+    .mGrid th a{
+        color: white;
     }
 
     .mGrid .alt {
-        background: #fcfcfc url(grd_alt.png) repeat-x top;
+        background-color: #f3f3f3;
     }
 
     .mGrid .pgr {
@@ -319,9 +344,10 @@ input[type="file"] {
     left: 0;
 }
 #cajacontenedor {
+    
     margin-top: 130px;
     position: relative;
-    background-color: white;
+/*    background-color: white;*/
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -366,11 +392,18 @@ center a {
     margin-right: -5px;
     margin-left: -5px;
 }
+.titulocard{
+    font-family:'Roboto';
+    font-size:25px;
+    color:#A5C739;
+    font-weight:700;
+}
 
 .card-header {
+    text-align: center;
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
+    background-color: #606060;
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
 .formularioblock {
@@ -470,7 +503,130 @@ center a {
     margin-top:-100px;
     z-index:-1;
 }
+footer div {
+    float: left;
+}
+footer {
+    text-align: center;
+    background-color: #606060;
+    padding: 0px;
+    color: white;
+    font-family: 'Trebuchet MS'
+}
+.divfoot {
+    text-align: left;
+    padding: 25px;
+}
 
+.elefoot {
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.elefootdos {
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.elefoottres {
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: bold;
+    color: #A5C739;
+    padding: 10px;
+    text-align: left;
+}
+#logobajo {
+    margin: 10px;
+    height: 260px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.logodes {
+    margin: 10px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+#monedat {
+    height: 90px;
+    line-height: 90px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: bold;
+    color: #A5C739;
+    padding: 10px;
+}
+#registrobot {
+    height: 90px;
+    line-height: 90px;
+    margin: 40px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    color: #606060;
+    padding: 10px;
+}
+#sesion {
+    height: 90px;
+    line-height: 90px;
+    margin: 40px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #606060;
+    font-weight: bold;
+    padding: 10px;
+}
+#botoncarrito {
+/*    height: 90px;
+    line-height: 90px;*/
+    margin: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #052D49;
+    border-radius: 12px;
+}
+#registro {
+    text-align: center;
+    line-height: 30px;
+}
+
+#moneda {
+    text-align: right;
+    line-height: 30px;
+}
+#zonat {
+    height: 90px;
+    line-height: 90px;
+    margin: 40px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: bold;
+    color: #606060;
+    padding: 10px;
+}
 
 
 

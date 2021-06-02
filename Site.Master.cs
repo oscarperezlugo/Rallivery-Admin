@@ -13,10 +13,10 @@ namespace PanelAdmin
         {
             if (Request.Cookies["nombreC"] != null)
             {
-                Label1.Text = "" + Request.Cookies["nombreC"].Value + " " + Request.Cookies["appellC"].Value + "";
+                Label1.Text = "" + Request.Cookies["nombreC"].Value + "";
                 if(Request.Cookies["perfilC"] != null)
                 {
-                    if (Request.Cookies["perfilC"].Value == "ADMIN")
+                    if (Request.Cookies["perfilC"].Value == "CLIENTE")
                     {
 
                     }
@@ -54,7 +54,7 @@ namespace PanelAdmin
             }
             else
             {
-                Page.RegisterStartupScript("LoadFunction", "<script type='text/javascript'>alert('NO AUTORIZADO');window.location='Login.aspx'</script>");
+                //Page.RegisterStartupScript("LoadFunction", "<script type='text/javascript'>alert('NO AUTORIZADO');window.location='Login.aspx'</script>");
             }
             
         }

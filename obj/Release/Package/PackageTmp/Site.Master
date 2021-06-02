@@ -20,18 +20,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Content/Print.css" rel="stylesheet" media="print"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">       
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <form runat="server">
         <nav class="nave fijador">
             <div  class="col2L  col0M col0S col0T" >
-                  <a href="Default.aspx"><img id="logo" src="img/weblogo_jebcpharma-2.png" /></a>
+                  <a href="Default.aspx"><img id="logo" src="Img/Recurso3.png" /></a>
             </div>            
         </nav>
         <nav class="subnave fijadordos">
             <label class="fa fa-bars botonsub no-print" for="check"></label>&ensp; 
             <i class="fa fa-user"></i>&ensp;<asp:Label ID="Label1" runat="server" CssClass="titulomenu"></asp:Label>
-            <asp:Button Text="CERRAR SESION" runat="server"  CssClass="titulomenu" for="chek" ForeColor="Red" BackColor="Transparent" BorderColor="Transparent" OnClick="Unnamed_Click"></asp:Button>
+            <%--<asp:Button Text="CERRAR SESION" runat="server"  CssClass="titulomenu" for="chek" ForeColor="Red" BackColor="Transparent" BorderColor="Transparent" OnClick="Unnamed_Click"></asp:Button>--%>
         </nav> 
         <div id="cajacontenedor" class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -41,16 +44,16 @@
         <label class="panelbloqueadorizq" for="check"></label>
         <div id="block1" class="menulateral" >
             <div class="desplegable">
-                <h3 class="titulomenu">DASHBOARD</h3>
+                <h3 class="titulomenu">Dashboard</h3>
                 <ul>
-                    <li><a href="Default.aspx">HOME</a></li>
+                    <li><a href="Default.aspx">Home</a></li>
                 </ul>
                 <div class="desplegable" id="bloque5" runat="server">
-                <h3 class="titulomenu">CLIENTES</h3>
+                <h3 class="titulomenu">Clienti</h3>
                 <ul>
-                    <li><a href="Lista.aspx">LISTA</a></li>
-                    <li><a href="Cliente.aspx">CREACION</a></li> 
-                    <li><a href="EditarUno.aspx">EDITAR CLIENTE</a></li>  
+       <%--             <li><a href="Lista.aspx">LISTA</a></li>--%>
+                    <li><a href="Cliente.aspx">Inserisci</a></li> 
+                    <li><a href="EditarUno.aspx">Modificare</a></li>  
                 </ul>
                     </div>
                 <%--<h3 class="titulomenu">PROVEEDORES</h3>
@@ -58,14 +61,14 @@
                 </ul>--%>
             </div>
             <div class="desplegable" id="bloque1" runat="server">
-                <h3 class="titulomenu">VENTAS</h3>
+                <h3 class="titulomenu">Vendita</h3>
                 <ul>
-                    <li><a href="Pedido.aspx">GENERAR NOTA DE ENTREGA</a></li>
-                    <li><a href="Pedidos.aspx">NOTAS DE ENTREGA</a></li>
-                    <li><a href="Cotizacion.aspx">COTIZAR</a></li>
-                    <li><a href="Cotizaciones.aspx">COTIZACIONES</a></li> 
-                    <li><a href="Cobranza.aspx">COBRANZA</a></li>
-                    <li><a href="PedidosEliminar.aspx">ELIMINAR FACTURAS</a></li>
+                   <%-- <li><a href="Pedido.aspx">GENERAR NOTA DE ENTREGA</a></li>--%>
+                    <li><a href="Pedidos.aspx">Elenco</a></li>
+<%--                    <li><a href="Cotizacion.aspx">COTIZAR</a></li>--%>
+    <%--                <li><a href="Cotizaciones.aspx">COTIZACIONES</a></li> 
+                    <li><a href="Cobranza.aspx">COBRANZA</a></li>--%>
+                    <li><a href="PedidosEliminar.aspx">Annulla</a></li>
                 </ul>
             </div>
             <%--<div class="desplegable">
@@ -76,50 +79,94 @@
                 </ul>
             </div>--%>
             <div class="desplegable" id="bloque2" runat="server">
-                <h3 class="titulomenu">COMPRAS</h3>
+                <h3 class="titulomenu">Menu</h3>
                 <ul>
-                    <li><a href="Compra.aspx">ORDEN DE COMPRA</a></li> 
+<%--                    <li><a href="Compra.aspx">ORDEN DE COMPRA</a></li> 
                     <li><a href="ListaProductos.aspx">LISTA DE PRODUCTOS</a></li> 
                     <li><a href="ListaProv.aspx">LISTA PROVEEDORES</a></li>
                     <li><a href="Proveedor.aspx">CREACION PROVEEDORES</a></li> 
-                    <li><a href="EditarProv.aspx">EDITAR PROVEEDORES</a></li> 
-                    <li><a href="Producto.aspx">CREACION PRODUCTO</a></li>
-                    <li><a href="ProdEditar.aspx">EDICION PRODUCTO</a></li>
-                    <li><a href="Categoria.aspx">CREACION CATEGORIA</a></li>
+                    <li><a href="EditarProv.aspx">EDITAR PROVEEDORES</a></li> --%>
+                    <li><a href="Producto.aspx">Inserisci</a></li>
+                    <li><a href="ProdEditar.aspx">Modificare</a></li>
+                    <li><a href="Categoria.aspx">Categoria</a></li>
                     <%--<li>EDICION PRODUCTO</li>
                     <li>EDICION CATEGORIA</li>--%>
                 </ul>
             </div>
-            <div class="desplegable" id="bloque3" runat="server">
+           <%-- <div class="desplegable" id="bloque3" runat="server">
                 <h3 class="titulomenu">TASA</h3>
                 <ul>
                     <li><a href="Tasa.aspx">ACTUALIZAR TASA</a></li>                    
                 </ul>
-            </div>
+            </div>--%>
             <div class="desplegable" id="bloque4" runat="server">
-                <h3 class="titulomenu">REPORTES</h3>
+                <h3 class="titulomenu">Rapporti</h3>
                 <ul>                    
-                    <li><a href="ListaProductos.aspx">EXISTENCIA POR PRODUCTO</a></li>                    
-                    <li><a href="ConsProdCli.aspx">PRODUCTOS POR CLIENTE</a></li>
-                    <li><a href="ConsVentasMes.aspx">VENTAS POR MES</a></li>
-                    <li><a href="ConsVenCli.aspx">VENTAS POR CLIENTE</a></li>
+<%--                    <li><a href="ListaProductos.aspx">EXISTENCIA POR PRODUCTO</a></li>                    
+                    <li><a href="ConsProdCli.aspx">PRODUCTOS POR CLIENTE</a></li>--%>
+                    <li><a href="ConsVentasMes.aspx">Vendita</a></li>
+<%--                    <li><a href="ConsVenCli.aspx">VENTAS POR CLIENTE</a></li>
                     <li><a href="PorCobrar.aspx">CUENTAS POR COBRAR</a></li>
                     <li><a href="Nomina.aspx">CREAR NOMINA</a></li> 
                     <li><a href="EditarNomina.aspx">EDITAR NOMINA</a></li> 
                     <li><a href="ClientesVendedor.aspx">CLIENTES X VENDEDOR</a></li> 
                     <li><a href="ConsVentasVend.aspx">VENTAS X VENDEDOR</a></li> 
-                    <li><a href="NotasPedidos.aspx">NOTAS X FACTURA</a></li> 
+                    <li><a href="NotasPedidos.aspx">NOTAS X FACTURA</a></li> --%>
                 </ul>
             </div>
-            <%--<div class="desplegable">
-                <h3 class="titulomenu">GASTOS</h3>
-                <ul>
+            <div class="desplegable">
+                <h3 class="titulomenu" style="color:red;"><asp:LinkButton CausesValidation="False" OnClick="CierreClick" runat="server" CssClass="botoncierre"  style="color:red;" ><i class="fa fa-user"></i> esci</asp:LinkButton></h3>
+            <%--    <ul>
                     <li>GASTO PUNTUAL</li>
                     <li>GASTO RECURRENTE</li>
                     <li class="ultimomenu">RECURSO HUMANO</li>
-                </ul>
-            </div>--%>
+                </ul>--%>
+            </div>
         </div>
+         <footer class="footer fila ">
+        <div id="footer1" class="col2L col1M col1S col1T divfoot">
+            <div class="fila">
+                <img id="logobajo" src="img/Isologo_5.png" />
+                <a class="elefoot col10L">© 2021 - Rallivery.</a><br />
+                <a class="elefoot col10L">Tutti i diritti riservati.</a>
+            </div>
+        </div>
+        <div id="footer2" class="col2L col1M col1S col1T divfoot">
+            <a class="elefoottres col10L">Categorie</a><br />
+            <br />
+            <a class="elefootdos col10L">Ristoranti</a><br />
+            <a class="elefootdos col10L">Supermercati</a><br />
+            <a class="elefootdos col10L">Farmacie</a><br />
+            <a class="elefootdos col10L">Florerie</a><br />
+            <a class="elefootdos col10L">Ferramente</a>
+        </div>
+        <div id="footer3" class="col2L col1M col1S col1T divfoot">
+            <a class="elefoottres col10L">Informazione</a><br />
+            <br />
+            <a class="elefootdos col10L">Termini e Condizione</a><br />
+            <a class="elefootdos col10L">Privacy Policy</a><br />
+            <a class="elefootdos col10L">Cookie Policy</a><br />
+            <a class="elefootdos col10L">Contatacci</a><br />
+            
+        </div>
+        <div id="footer4" class="col2L col1M col1S col1T divfoot">
+            <br />
+            <br />
+            <br />
+            <a class="elefootdos col10L">Chi Siamo</a><br />
+            <a class="elefootdos col10L">Diventa Rallista</a><br />
+            <a class="elefootdos col10L">Diventa Partner</a><br />
+        </div>
+        <div id="footer5" class="col2L col1M col1S col1T divfoot">
+            <a class="elefoottres col10L">Portaci ovunque</a><br />
+            <img class="logodes" src="img/Frame1.png" /><br />
+            <img class="logodes" src="img/imagen7.png" /><br />  
+            <a class="elefoottres col10L">Seguici su</a><br />
+            <i class="fa fa-instagram elefoottres" aria-hidden="true" style="font-size:25px;"></i>
+            <i class="fa fa-facebook-official elefoottres" aria-hidden="true" style="font-size:25px;"></i>
+            <br />
+        </div>
+    </footer>
                
     </form>
 </body>

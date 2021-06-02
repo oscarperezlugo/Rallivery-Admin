@@ -6,7 +6,7 @@
         <div class="card-header">
                 <div class="form-row">
                     <div class="col10L">
-                         <asp:Label ID="Label6" runat="server" Text="Registro de Cliente" Style="font-weight: bold; font-size: 18px;"></asp:Label>
+                         <asp:Label ID="Label6" runat="server" Text="Registro de Cliente"  CssClass="titulocard"></asp:Label>
                     </div>
                 </div>
             </div>

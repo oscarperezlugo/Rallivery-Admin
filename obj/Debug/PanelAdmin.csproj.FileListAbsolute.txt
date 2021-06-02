@@ -225,6 +225,7 @@ C:\Users\oscar\source\repos\jebcpharmaadmin\obj\Debug\PanelAdmin.csproj.CoreComp
 C:\Users\oscar\source\repos\jebcpharmaadmin\obj\Debug\PanelAdmin.csproj.CopyComplete
 C:\Users\oscar\source\repos\jebcpharmaadmin\obj\Debug\PanelAdmin.dll
 C:\Users\oscar\source\repos\jebcpharmaadmin\obj\Debug\PanelAdmin.pdb
+C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csproj.CoreCompileInputs.cache
 C:\Users\oscar\source\repos\Rallivery Admin\bin\PanelAdmin.dll.config
 C:\Users\oscar\source\repos\Rallivery Admin\bin\PanelAdmin.dll
 C:\Users\oscar\source\repos\Rallivery Admin\bin\PanelAdmin.pdb
@@ -297,7 +298,6 @@ C:\Users\oscar\source\repos\Rallivery Admin\bin\Microsoft.CodeDom.Providers.DotN
 C:\Users\oscar\source\repos\Rallivery Admin\bin\es\System.Web.Optimization.resources.dll
 C:\Users\oscar\source\repos\Rallivery Admin\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csprojAssemblyReference.cache
-C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csproj.CoreCompileInputs.cache
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csproj.CopyComplete
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.dll
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.pdb
