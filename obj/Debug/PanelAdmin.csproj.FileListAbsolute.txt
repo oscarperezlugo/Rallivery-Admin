@@ -297,7 +297,7 @@ C:\Users\oscar\source\repos\Rallivery Admin\bin\Microsoft.AspNet.FriendlyUrls.xm
 C:\Users\oscar\source\repos\Rallivery Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\oscar\source\repos\Rallivery Admin\bin\es\System.Web.Optimization.resources.dll
 C:\Users\oscar\source\repos\Rallivery Admin\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csprojAssemblyReference.cache
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csproj.CopyComplete
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.dll
 C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.pdb
+C:\Users\oscar\source\repos\Rallivery Admin\obj\Debug\PanelAdmin.csproj.AssemblyReference.cache

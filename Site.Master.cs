@@ -16,7 +16,7 @@ namespace PanelAdmin
                 Label1.Text = "" + Request.Cookies["nombreC"].Value + "";
                 if(Request.Cookies["perfilC"] != null)
                 {
-                    if (Request.Cookies["perfilC"].Value == "CLIENTE")
+                    if (Request.Cookies["perfilC"].Value == "RESTAURANT")
                     {
 
                     }
